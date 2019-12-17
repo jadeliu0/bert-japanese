@@ -33,6 +33,9 @@ def reporthook(blocknum, blocksize, totalsize):
 
 
 def download():
+    print(FILEURL)
+    print(FILEPATH)
+    print(reporthook)
     urlretrieve(FILEURL, FILEPATH, reporthook)
 
 
